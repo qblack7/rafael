@@ -1,22 +1,126 @@
-body{
-    background-color: rgba(201, 201, 201, 0.767);
+*{
     margin: 0;
     padding: 0;
-    font-size: 20px;
-    font-family: arial;
+    box-sizing: border-box;
+    font-family: verdana;
+    color: aliceblue;
 }
-header{
-    background-color: rgb(54, 57, 59);
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(18, 1, 24);
+}
+.navegacao{
+    top: 0;
+    position: fixed;
+    background-color: rgb(43, 2, 56, 0.8);
     width: 100%;
+}
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    justify-content: center;
+    padding: 30px;
+}
+.menu-link{
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+    padding: 7px;
+}
+.menu-link::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(aliceblue);
+    transition: 0.5s ease;
+}
+.menu-link:hover::after{
+    width: 100%;
+}
+.inicio{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foto-rafael{
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(148, 1, 177, 0.651) 0px 5px 10px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+h1{
+    color: blueviolet;
+    margin: 15px;
+    font-family: bold;
+}
+.sobre{
+ padding: 30px 30px;
+ margin: 70px;
+}
+.sobre-title{
+    text-align: center;
+    padding: 5px;
+ 
+}
+.sobrebox{
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid rgba(148, 1, 177, 0.651);
+    /*background-color: rgba(156, 75, 233, 0.295);*/
+}
+.projeto-title{
+  text-align: center;
+  padding: 20px;
+}
+.projeto-box{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   margin: 70px;
+}
+.projeto-card{
     padding: 10px;
     text-align: center;
 }
-header h1{
-    color: aliceblue;
+.projetos-image{
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(148, 1, 177, 0.651) 0px 5px 10px;
 }
-header p{
-    color: aliceblue;
+.contato-title{
+  text-align: center;
+  padding: 20px;
 }
+.contato-box{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 70px;
+}
+.card{
+    padding: 10px;
+    text-align: center; 
+}
+
+.image-contato{
+   width: 200px;
+   height: 200px;
+   border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(148, 1, 177, 0.651) 0px 5px 10px;
+}
+
 section{
     margin: 30px;
 }
